@@ -3,7 +3,7 @@ from flask_api import status
 app = Flask(__name__)
 @app.route('/')
 def home():
-   return {'welcome': 'to': 'my': 'app'}
+   return "<h1>Welcome to my app</h1>", 200, {"X-Special": "Value"}
 
 @app.route('/status/')
 def empty_view(self):
